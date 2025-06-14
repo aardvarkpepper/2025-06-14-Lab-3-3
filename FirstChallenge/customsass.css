@@ -14,7 +14,14 @@
 .snorlax-frame {
   width: 320px;
   height: 499px;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.snorlax-qrcodeimg {
+  margin-top: 16px;
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
 }
 
 /*!

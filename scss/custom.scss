@@ -6,6 +6,10 @@ $misterframewidth: 320px;
 $misterframeheight: 499px;
 $misterframeborderradius: 20px;
 
+$misterqrcodeimgmargintop: 16px;
+$misterqrcodeimgside: 288px;
+$misterqrcodeimgborderradius: 10px;
+
 .prismaticcoal {
   background-color: $mistercoal;
 }
@@ -21,8 +25,14 @@ $misterframeborderradius: 20px;
 .snorlax-frame {
   width: $misterframewidth;
   height: $misterframeheight;
-  border-radius: $misterframeborderradius;
+  border-radius: $misterqrcodeimgborderradius;
 }
 
+.snorlax-qrcodeimg {
+  margin-top: $misterqrcodeimgmargintop;
+  width: $misterqrcodeimgside;
+  height: $misterqrcodeimgside;
+  border-radius: $misterqrcodeimgborderradius;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -36,6 +36,7 @@ https://getbootstrap.com/docs/5.3/utilities/background/
 https://sass-lang.com/documentation/breaking-changes/css-vars/
 https://sass-lang.com/documentation/variables/
 https://getbootstrap.com/docs/4.0/utilities/borders/
+https://getbootstrap.com/docs/4.0/utilities/spacing/
 
 
 ## Bash Commands
@@ -135,6 +136,7 @@ For following, used !important to override.
 
 Color is set to a wide yet limited range of specific colors.
 Width and height are set to 25% increments of parent element.
+margin-top is set to fractions of $spacer; default 1rem = 16 pixels.  But the sizes I use don't work with the fractions available, and rem's actual pixel size may change depending on user settings.
 
 background-color: #D5E1EF
 width: 320px;
