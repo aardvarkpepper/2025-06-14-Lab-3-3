@@ -1,9 +1,13 @@
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #D5E1EF;
   height: 100vh;
+} */
+
+body {
+  background-color: #D5E1EF !important;
 }
 
 .frame {

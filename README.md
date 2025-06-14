@@ -15,6 +15,18 @@ It looks like Frontend Mentor may have tools to assess accuracy of submitted cha
 
 ## Reference Notes
 
-Note:  Bootstrap version has been updated since lab reference created.  If components do not work, change to current version.
+Bootstrap version has been updated since lab reference created.  If components do not work, change to current version.
+
+It seems to use custom colors with Bootstrap, that SASS must be used, requiring importing files and modifying.  I think that is beyond the scope of the lab.
 
 https://getbootstrap.com/docs/4.0/layout/utilities-for-layout/
+https://getbootstrap.com/docs/5.0/customize/sass/
+
+## CSS to Bootstrap Class Reference
+
+| CSS | Bootstrap |
+|:--------------------------|:--------------|
+| align-items: center; | align-items-center |
+| display: flex; | d-flex |
+| height: 100vh; | vh-100 |
+| justify-content: center; | justify-content-center |
