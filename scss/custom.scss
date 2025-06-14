@@ -31,6 +31,8 @@ $misterdescriptionheight: 63px;
 $misterdescriptionlineheight: 140%;
 $misterdescriptionletter-spacing: 0.2px;
 
+$misterbreakstuff1: 16px;
+
 .prismaticcoal {
   background-color: $mistercoal;
 }
@@ -58,7 +60,7 @@ $misterdescriptionletter-spacing: 0.2px;
 
 .snorlax-title {
   margin-top: $mistertitlemargintop;
-  margin-left: $mistertitlemarginleft;
+  // margin-left: $mistertitlemarginleft;
   font-family: $mistertitlefontfamily, $mistertitlefontfamilysecondary;
   font-size: $mistertitlefontsize;
   font-weight: $mistertitlefontweight;
@@ -70,7 +72,7 @@ $misterdescriptionletter-spacing: 0.2px;
 
 .snorlax-description {
   margin-top: $misterdescriptionmargintop;
-  margin-left: $misterdescriptionmarginleft;
+  // margin-left: $misterdescriptionmarginleft;
   font-family: $misterdescriptionfontfamily, $misterdescriptionfontfamilysecondary;
   font-size: $misterdescriptionfontsize;
   font-weight: $misterdescriptionfontweight;
