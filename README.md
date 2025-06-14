@@ -39,6 +39,7 @@ https://getbootstrap.com/docs/4.0/utilities/borders/
 https://getbootstrap.com/docs/4.0/utilities/spacing/
 https://getbootstrap.com/docs/5.0/content/typography/
 https://getbootstrap.com/docs/5.0/utilities/text/
+https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
 
 
 ## Bash Commands
@@ -143,6 +144,8 @@ Width and height are set to 25% increments of parent element, unsuitable for mee
 margin-top is set to fractions of $spacer; default 1rem = 16 pixels.  But the sizes I use don't work with the fractions available, and rem's actual pixel size may change depending on user settings.
 
 font-family, font-size, font-weight do not use measurements that allow design specs to be accurately created.  line-height documentation does not seem to offer any measurement that allow design specs to be accurately created.  letter-spacing seems not to be available in Bootstrap (Fast Bootstrap seems to be a custom addon but were I using resources not advised in the assignment I'd create React components myself).
+
+
 
 ## CSS to Bootstrap Class Reference
 
