@@ -20,6 +20,17 @@ $mistertitlewidth: 280px;
 $mistertitleheight: 52px;
 $mistertitlelineheight: 120%;
 
+$misterdescriptionmargintop: 16px;
+$misterdescriptionmarginleft: 32px;
+$misterdescriptionfontfamily: 'Outfit';
+$misterdescriptionfontfamilysecondary: sans-serif;
+$misterdescriptionfontsize: 15px;
+$misterdescriptionfontweight: 400;
+$misterdescriptionwidth: 256px;
+$misterdescriptionheight: 63px;
+$misterdescriptionlineheight: 140%;
+$misterdescriptionletter-spacing: 0.2px;
+
 .prismaticcoal {
   background-color: $mistercoal;
 }
@@ -55,6 +66,19 @@ $mistertitlelineheight: 120%;
   height: $mistertitleheight;
   line-height: $mistertitlelineheight;
   color:  $mistercoal;
+}
+
+.snorlax-description {
+  margin-top: $misterdescriptionmargintop;
+  margin-left: $misterdescriptionmarginleft;
+  font-family: $misterdescriptionfontfamily, $misterdescriptionfontfamilysecondary;
+  font-size: $misterdescriptionfontsize;
+  font-weight: $misterdescriptionfontweight;
+  width: $misterdescriptionwidth;
+  height: $misterdescriptionheight;
+  line-height: $misterdescriptionlineheight;
+  letter-spacing: $misterdescriptionletter-spacing;
+  color: $misterslate;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

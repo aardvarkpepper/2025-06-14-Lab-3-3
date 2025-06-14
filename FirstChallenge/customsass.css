@@ -36,6 +36,19 @@
   color: #1F314F;
 }
 
+.snorlax-description {
+  margin-top: 16px;
+  margin-left: 32px;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  width: 256px;
+  height: 63px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #68778D;
+}
+
 /*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
