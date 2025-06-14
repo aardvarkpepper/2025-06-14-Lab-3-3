@@ -8,12 +8,17 @@ Figma design components have specific information including element size, orient
 
 2.  What challenges did you encounter when aligning your code with the design specifications?
 
-Bootstrap uses utility classes and premade components that can save users time - but these are sharply limited.  
-
+Bootstrap uses utility classes and premade components that can save users time - but these are sharply limited.  Below sections document some of my exciting adventures in addressing these differences.
 
 3.  How can the feedback and community resources on Frontend Mentor help you improve as a developer?
 
 It looks like Frontend Mentor may have tools to assess accuracy of submitted challenges; I would imagine it would offer specific feedback on what things were missed.  Feedback and community resources are always useful to developers, as getting outside feedback is always useful.
+
+## Summary of Bootstrap Use
+
+Bootstrap's fine if not working to spec.  But where custom colors and custom sizes need be used, Bootstrap really requires either SASS, or slapping !important all over the place, or changing design away from specs to meet Bootstrap's premade settings.
+
+I could have thrown design specs out, or used !important, but instead I used SASS to be consistent with design specs without using a load of overrides that would make using Bootstrap fairly pointless.
 
 ## Reference Notes
 
@@ -30,6 +35,7 @@ https://getbootstrap.com/docs/5.3/customize/sass/
 https://getbootstrap.com/docs/5.3/utilities/background/
 https://sass-lang.com/documentation/breaking-changes/css-vars/
 https://sass-lang.com/documentation/variables/
+https://getbootstrap.com/docs/4.0/utilities/borders/
 
 
 ## Bash Commands
@@ -139,6 +145,8 @@ height: 499px;
 | CSS | Bootstrap |
 |:--------------------------|:--------------|
 | align-items: center; | align-items-center |
+| background-color: white | bg-white |
 | display: flex; | d-flex |
 | height: 100vh; | vh-100 |
 | justify-content: center; | justify-content-center |
+| text-align: center; | text-center |

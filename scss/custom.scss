@@ -2,6 +2,10 @@ $mistercoal: #1F314F;
 $misterslate: #68778D;
 $misterfog: #D5E1EF;
 
+$misterframewidth: 320px;
+$misterframeheight: 499px;
+$misterframeborderradius: 20px;
+
 .prismaticcoal {
   background-color: $mistercoal;
 }
@@ -12,6 +16,12 @@ $misterfog: #D5E1EF;
 
 .prismaticfog {
   background-color: $misterfog;
+}
+
+.snorlax-frame {
+  width: $misterframewidth;
+  height: $misterframeheight;
+  border-radius: $misterframeborderradius;
 }
 
 

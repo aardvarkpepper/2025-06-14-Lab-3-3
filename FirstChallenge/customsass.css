@@ -11,6 +11,12 @@
   background-color: #D5E1EF;
 }
 
+.snorlax-frame {
+  width: 320px;
+  height: 499px;
+  border-radius: 20px;
+}
+
 /*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
