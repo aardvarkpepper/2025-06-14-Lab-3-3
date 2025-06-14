@@ -27,11 +27,101 @@ https://www.freecodecamp.org/news/how-to-customize-bootstrap-with-sass/
 https://getbootstrap.com/
 https://getbootstrap.com/docs/5.3/getting-started/download/
 https://getbootstrap.com/docs/5.3/customize/sass/
+https://getbootstrap.com/docs/5.3/utilities/background/
+https://sass-lang.com/documentation/breaking-changes/css-vars/
+https://sass-lang.com/documentation/variables/
+
 
 ## Bash Commands
 
 npm i bootstrap@5.3.6
 npm install -g sass
+sass --watch ./scss/custom.scss ./css/custom.css
+sass scss/custom.scss:FirstChallenge/customsass.css
+
+To this point, I'd downloaded Bootstrap files locally, npm installed sass, I think unsuccessfully run --watch, created various abortive custom.scss files.  Ran above while in 2025-06-14-Lab-3-3, with subdirectories scss and FirstChallenge.  custom.scss was in scss folder.  FirstChallenge contained bulk of files for FirstChallenge and did not have any customsass.css file.  customsass.css and customsass.css.map files created.  Reference bootstrap guide.
+
+## Bootstrap Reference History
+
+Originally Bootstrap was run off remote host files.
+
+Lab references:
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+Bootstrap references (updated):
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+Last link href reference takes precedence, so if I listed my original link href after the Bootstrap reference, mine would overwrite (possibly replace entirely) any earlier link href reference by Bootstrap.  Similarly, listing Bootstrap last would overwrite earlier css.  However, I could list my default css first and use !important; anything with !important would override even the later Bootstrap reference.
+
+After reading I couldn't use custom colors without SASS, and that I'd need to install Bootstrap files locally and do various other things to use SASS, I initially used !important in CSS to override CSS.  The assignment is odd in that we didn't really cover using SASS (though it was mentioned in class, we didn't go through any walkthrough of use), yet we're supposed to use Bootstrap which will require SASS.
+
+Require, because though using Bootstrap presets to match colors might work out more or less, presets on size must be 25 percent increments of the parent component.  There might be some way to use Bootstrap's preset media query breakpoints to achieve custom sizing
+
+https://getbootstrap.com/docs/4.1/layout/overview/
+
+but that's frankly too much work for too-specific code that can't be reused.
+
+After downloading Bootstrap files locally, I ended up using multiple references to "bootstrap.min.css".  I might reflect on exactly why I shifted files around, but I won't get into that.
+
+I also had multiple locations and files for custom.scss, which I eventually used to create a "customsass.css" file that I then used as a reference.  That file was generated from a bash command input, which looked at the custom.scss file I'd created, read the import command, and then did a lot of stuff to create a very lengthy customsass.css file.
+
+## Rewriting custom.scss
+
+After each rewrite, I'd run the bash command to regenerate customsass.css.
+
+### Initial
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$slate900: #1F314F;
+$slate500: #68778D;
+$slate300: #D5E1EF;
+
+Fail.  Running short of time, I tried overwriting existing properties.
+https://getbootstrap.com/docs/5.0/utilities/background/
+
+$primary: #1F314F;
+$secondary: #68778D;
+$success: #D5E1EF;
+
+Fail.  Re-referenced
+
+https://www.freecodecamp.org/news/how-to-customize-bootstrap-with-sass/
+
+noticed I had imported at the start of the file instead of the end, changed order.
+
+Success.
+
+Attempted modifying custom.scss
+
+$primary: #1F314F;
+$secondary: #68778D;
+$success: #D5E1EF;
+
+$mistercoal: #1F314F;
+$misterslate: #68778D;
+$misterfog: #D5E1EF;
+
+.prismaticcoal {
+  background-color: $mistercoal;
+}
+
+.prismaticslate {
+  background-color: $misterslate;
+}
+
+.prismaticfog {
+  background-color: $misterfog;
+}
+
+Applying HTML class prismaticcoal did nothing, as expected.  Ran sass scss/custom.scss:FirstChallenge/customsass.css in bash, then worked.
+
 
 ## CSS to Bootstrap - What Can't Be Done
 
