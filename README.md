@@ -13,3 +13,8 @@ Figma design components have specific information including element size, orient
 
 It looks like Frontend Mentor may have tools to assess accuracy of submitted challenges; I would imagine it would offer specific feedback on what things were missed.  Feedback and community resources are always useful to developers, as getting outside feedback is always useful.
 
+## Reference Notes
+
+Note:  Bootstrap version has been updated since lab reference created.  If components do not work, change to current version.
+
+https://getbootstrap.com/docs/4.0/layout/utilities-for-layout/
