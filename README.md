@@ -20,6 +20,10 @@ Bootstrap's fine if not working to spec.  But where custom colors and custom siz
 
 I could have thrown design specs out, or used !important, but instead I used SASS to be consistent with design specs without using a load of overrides that would make using Bootstrap fairly pointless.
 
+For the first assignment, I got everything working perfectly with SASS, then broke it using grid system to center, then fixed it, then broke more things using Bootstrap card component to 'simplify' layout.  I expect I could have fixed that too, but then that's not using the cards as described in https://getbootstrap.com/docs/5.3/components/card/
+
+So it's break the specs or break the assignment.  I chose to break the specs because ten hours is enough for the first half of an assignment that's only supposed to take a few hours, and there's no way to go strictly by assignment without breaking specs anyways.  (Note:  I see this as similar to what happened with the ARIA assignment; here I am aggressively meeting assignment requirements rather than aggressively building a functional website, which I think is 'correct'; if not please advise.)
+
 ## Reference Notes
 
 Bootstrap version has been updated since lab reference created.  If components do not work, change to current version.
@@ -40,6 +44,8 @@ https://getbootstrap.com/docs/4.0/utilities/spacing/
 https://getbootstrap.com/docs/5.0/content/typography/
 https://getbootstrap.com/docs/5.0/utilities/text/
 https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
+https://getbootstrap.com/docs/4.0/layout/grid/
+https://getbootstrap.com/docs/4.0/components/card/
 
 
 ## Bash Commands
