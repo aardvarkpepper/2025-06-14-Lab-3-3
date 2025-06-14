@@ -37,6 +37,8 @@ https://sass-lang.com/documentation/breaking-changes/css-vars/
 https://sass-lang.com/documentation/variables/
 https://getbootstrap.com/docs/4.0/utilities/borders/
 https://getbootstrap.com/docs/4.0/utilities/spacing/
+https://getbootstrap.com/docs/5.0/content/typography/
+https://getbootstrap.com/docs/5.0/utilities/text/
 
 
 ## Bash Commands
@@ -132,15 +134,15 @@ Applying HTML class prismaticcoal did nothing, as expected.  Ran sass scss/custo
 
 ## CSS to Bootstrap - What Can't Be Done
 
-For following, used !important to override.
+For following, could use !important to override.
 
-Color is set to a wide yet limited range of specific colors.
-Width and height are set to 25% increments of parent element.
+Color is set to a wide yet limited range of specific colors, unsuitable for meeting most design specs.
+
+Width and height are set to 25% increments of parent element, unsuitable for meeting most design spec.
+
 margin-top is set to fractions of $spacer; default 1rem = 16 pixels.  But the sizes I use don't work with the fractions available, and rem's actual pixel size may change depending on user settings.
 
-background-color: #D5E1EF
-width: 320px;
-height: 499px;
+font-family, font-size, font-weight do not use measurements that allow design specs to be accurately created.  line-height documentation does not seem to offer any measurement that allow design specs to be accurately created.  letter-spacing seems not to be available in Bootstrap (Fast Bootstrap seems to be a custom addon but were I using resources not advised in the assignment I'd create React components myself).
 
 ## CSS to Bootstrap Class Reference
 

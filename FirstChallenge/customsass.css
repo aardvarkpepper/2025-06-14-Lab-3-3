@@ -24,6 +24,18 @@
   border-radius: 10px;
 }
 
+.snorlax-title {
+  margin-top: 24px;
+  margin-left: 20px;
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  width: 280px;
+  height: 52px;
+  line-height: 120%;
+  color: #1F314F;
+}
+
 /*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors

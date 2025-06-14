@@ -10,6 +10,16 @@ $misterqrcodeimgmargintop: 16px;
 $misterqrcodeimgside: 288px;
 $misterqrcodeimgborderradius: 10px;
 
+$mistertitlemargintop: 24px;
+$mistertitlemarginleft: 20px;
+$mistertitlefontfamily: 'Outfit';
+$mistertitlefontfamilysecondary: sans-serif;
+$mistertitlefontsize: 22px;
+$mistertitlefontweight: 700;
+$mistertitlewidth: 280px;
+$mistertitleheight: 52px;
+$mistertitlelineheight: 120%;
+
 .prismaticcoal {
   background-color: $mistercoal;
 }
@@ -33,6 +43,18 @@ $misterqrcodeimgborderradius: 10px;
   width: $misterqrcodeimgside;
   height: $misterqrcodeimgside;
   border-radius: $misterqrcodeimgborderradius;
+}
+
+.snorlax-title {
+  margin-top: $mistertitlemargintop;
+  margin-left: $mistertitlemarginleft;
+  font-family: $mistertitlefontfamily, $mistertitlefontfamilysecondary;
+  font-size: $mistertitlefontsize;
+  font-weight: $mistertitlefontweight;
+  width: $mistertitlewidth;
+  height: $mistertitleheight;
+  line-height: $mistertitlelineheight;
+  color:  $mistercoal;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
