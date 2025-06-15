@@ -16,13 +16,19 @@ It looks like Frontend Mentor may have tools to assess accuracy of submitted cha
 
 ## Summary of Bootstrap Use
 
-Bootstrap's fine if not working to spec.  But where custom colors and custom sizes need be used, Bootstrap really requires either SASS, or slapping !important all over the place, or changing design away from specs to meet Bootstrap's premade settings.
+The utility of Bootstrap (and CSS frameworks in general) is also its weakness - predefined code.
 
-I could have thrown design specs out, or used !important, but instead I used SASS to be consistent with design specs without using a load of overrides that would make using Bootstrap pointless.
+I can build something with Bootstrap quickly, using Bootstrap's predefined code to speed the process - and accept the limitations Bootstrap imposes.  Or I can build something and write my own CSS, not being subject to Bootstrap's limitations.
 
-For the first assignment, I got everything working perfectly with SASS, then broke it using grid system to center, then fixed it, then broke more things using Bootstrap card component to 'simplify' layout, then fixed more things.
+Or I can take ten times the time it would take me to write my own CSS to build something in Bootstrap.  With Bootstrap, the more I build to spec, the less I use Bootstrap's native advantages.  The more I build to spec in Bootstrap, the more I must use custom workarounds that take time to implement, that additionally complicate the code and make it less accessible.
 
-For second assignment, I did assignment requirements, though again things couldn't quite be fit to spec.
+With this assignment, I had to choose between meeting design specifications and assignment requirements, given limited time.  With a previous assignment (the ARIA lab), I focused on building an accessible website that I thought fit the requirements.  I came to understand, however, that I needed to be more aggressive about interpreting what assigments require.
+
+The first assignment's first image inside the card is a good example.  Some hours into the assignment, I discovered !important and realized I could use it to override Bootstrap definitions.  I realized, however, that this could be interpreted as contrary to the intent of the assignment, so chose to try to implement SASS, which I thought offered the best chance of using Bootstrap while still fulfilling assignment requirements.
+
+Several hours later, I'd read through documentation and additional articles, installed locally as that was required to use SASS, and implemented the design spec.  I had thought I could implement the rest of the assignment requirements by nesting built components inside components built to meet assignment requirements, but I realized that couldn't really be done.
+
+At this point I'd spent a full day and a half on the assignment, which was quite a lot more than the time I'd allotted, and having looked over the requirements for the SBA which is also due quite soon, I decided to cut things short, instead of trying to re-adapt the project to work with Bootstrap's 12-column system.  At some point, trying to nest divs within divs within divs within divs and doing complicated workarounds completely goes against the entire supposed point of Bootstrap - which is that it's supposed to be easy and fast.
 
 ## Reference Notes
 
@@ -54,6 +60,8 @@ https://getbootstrap.com/docs/5.0/utilities/vertical-align/
 https://www.geeksforgeeks.org/how-to-set-vertical-alignment-in-bootstrap/
 https://getbootstrap.com/docs/5.0/utilities/api/
 
+https://getbootstrap.com/docs/5.3/layout/grid/
+https://getbootstrap.com/docs/5.0/layout/columns/
 
 ## Bash Commands
 
@@ -145,7 +153,6 @@ $misterfog: #D5E1EF;
 
 Applying HTML class prismaticcoal did nothing, as expected.  Ran sass scss/custom.scss:FirstChallenge/customsass.css in bash, then worked.
 
-
 ## CSS to Bootstrap - What Can't Be Done
 
 For following, could use !important to override.
@@ -157,8 +164,6 @@ Width and height are set to 25% increments of parent element, unsuitable for mee
 margin-top is set to fractions of $spacer; default 1rem = 16 pixels.  But the sizes I use don't work with the fractions available, and rem's actual pixel size may change depending on user settings.
 
 font-family, font-size, font-weight do not use measurements that allow design specs to be accurately created.  line-height documentation does not seem to offer any measurement that allow design specs to be accurately created.  letter-spacing seems not to be available in Bootstrap (Fast Bootstrap seems to be a custom addon but were I using resources not advised in the assignment I'd create React components myself).
-
-
 
 ## CSS to Bootstrap Class Reference
 
