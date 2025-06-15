@@ -18,11 +18,11 @@ It looks like Frontend Mentor may have tools to assess accuracy of submitted cha
 
 Bootstrap's fine if not working to spec.  But where custom colors and custom sizes need be used, Bootstrap really requires either SASS, or slapping !important all over the place, or changing design away from specs to meet Bootstrap's premade settings.
 
-I could have thrown design specs out, or used !important, but instead I used SASS to be consistent with design specs without using a load of overrides that would make using Bootstrap fairly pointless.
+I could have thrown design specs out, or used !important, but instead I used SASS to be consistent with design specs without using a load of overrides that would make using Bootstrap pointless.
 
-For the first assignment, I got everything working perfectly with SASS, then broke it using grid system to center, then fixed it, then broke more things using Bootstrap card component to 'simplify' layout.  I expect I could have fixed that too, but then that's not using the cards as described in https://getbootstrap.com/docs/5.3/components/card/
+For the first assignment, I got everything working perfectly with SASS, then broke it using grid system to center, then fixed it, then broke more things using Bootstrap card component to 'simplify' layout, then fixed more things.
 
-So it's break the specs or break the assignment.  I chose to break the specs because ten hours is enough for the first half of an assignment that's only supposed to take a few hours, and there's no way to go strictly by assignment without breaking specs anyways.  (Note:  I see this as similar to what happened with the ARIA assignment; here I am aggressively meeting assignment requirements rather than aggressively building a functional website, which I think is 'correct'; if not please advise.)
+For second assignment, I did assignment requirements, though again things couldn't quite be fit to spec.
 
 ## Reference Notes
 
@@ -168,6 +168,7 @@ font-family, font-size, font-weight do not use measurements that allow design sp
 | background-color: white | bg-white |
 | border-radius: 10px; | rounded (cannot specify px) or rounded-circle |
 | display: flex; | d-flex |
+| flex-direction: column; | flex-column |
 | height: 100vh; | vh-100 |
 | justify-content: center; | justify-content-center |
 | margin: (?) | (set to $spacer, based on ?rem) |
