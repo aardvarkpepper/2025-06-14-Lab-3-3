@@ -47,6 +47,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
 https://getbootstrap.com/docs/4.0/layout/grid/
 https://getbootstrap.com/docs/4.0/components/card/
 
+https://getbootstrap.com/docs/5.1/utilities/spacing/
+https://getbootstrap.com/docs/4.0/utilities/vertical-align/
+https://getbootstrap.com/docs/4.0/utilities/spacing/
+https://getbootstrap.com/docs/5.0/utilities/vertical-align/
+https://www.geeksforgeeks.org/how-to-set-vertical-alignment-in-bootstrap/
+https://getbootstrap.com/docs/5.0/utilities/api/
+
 
 ## Bash Commands
 
@@ -159,7 +166,11 @@ font-family, font-size, font-weight do not use measurements that allow design sp
 |:--------------------------|:--------------|
 | align-items: center; | align-items-center |
 | background-color: white | bg-white |
+| border-radius: 10px; | rounded (cannot specify px) or rounded-circle |
 | display: flex; | d-flex |
 | height: 100vh; | vh-100 |
 | justify-content: center; | justify-content-center |
+| margin: (?) | (set to $spacer, based on ?rem) |
+| overflow: hidden; | overflow-hidden |
 | text-align: center; | text-center |
+| width: auto; | w-auto |
